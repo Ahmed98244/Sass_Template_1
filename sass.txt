@@ -1,0 +1,41 @@
+- Mixins
+- Bourbon
+- Media Query
+- If Condition
+- Helpers Classs
+<< media >>
+@media(max-width: 767px) {
+  
+}
+@media(min-width: 768px) {
+
+}
+@media(min-width: 992px) {
+
+}
+@media(min-width: 1200px) {
+
+}
+
+there are 3 way 
+1- ordinary variable >> easy way 
+
+2- interboration >> #{ali}  // $ali: "(min-width: 992px)";
+
+3- Mixins >>  EX >>
+                    @mixin ali {
+                        @media(min-width: 992px) {
+                            @content;
+                        }
+                       .....
+                    }
+                    @include ali {
+                            color: #080;
+                        }
+
+
+
+
+
+
+

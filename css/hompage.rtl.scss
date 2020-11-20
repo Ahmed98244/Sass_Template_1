@@ -1,0 +1,16 @@
+@import "sass/helpers/variables";
+
+$float-left: right;
+$float-right: left;
+
+.header {
+    .logo {
+        float:$float-left;
+    
+    }
+    .navbar {
+        li {
+            float:$float-left;
+        }
+    }
+}

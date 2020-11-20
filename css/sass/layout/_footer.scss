@@ -1,0 +1,118 @@
+.footer {
+  background-color: #e2e2e2;
+  overflow: hidden;
+  padding-top: 30px;
+  margin-top: 50px;
+    .gallery, .info, .contact {
+      float: $float-left;
+    }
+    .gallery{
+      @media #{$small} {
+        width: 100%
+      }
+      @media #{$medium} {
+        width: 50%;
+      }
+      @media #{$maxMobile} {
+        text-align: center;
+        width: 100%;
+      }
+      .gallery-box {
+        overflow: hidden;
+        margin-bottom: 20px;
+        img {
+          @media #{$small} {
+          float: $float-left;
+          }
+          width: 200px;
+          height: 200px;
+        }
+        .text {
+          @media #{$small} {
+            float: $float-left;
+            width: calc(100% - 200px);
+            }
+
+          h4 {
+            color: $mainColor;
+            margin: 12px 0 10px 10px;
+          }
+          p {
+            color: #888;
+            line-height: 1.6;
+            margin: 5px 0 10px 10px;
+          }
+        }
+      }
+    }
+    .info {
+      
+      @media #{$small} {
+        width: 50%
+      }
+      @media #{$medium} {
+        width: 24%;
+        margin-left: 1%;
+      }
+      ul {
+        margin-top: 23px;
+        color: #888;
+        line-height: 2;
+        li {
+          span {
+            color: $mainColor;
+          }
+        }
+      }
+      h4 {
+        color: #888;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      p {
+        color: #888;
+        margin-top: 8px;
+      }
+    }
+    .contact {
+      @media #{$small} {
+        width: 50%
+      }
+      @media #{$medium} {
+        width: 25%;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        border: 1px solid #c9c9c9;
+        border-radius: 10px;
+        width: 100%;
+        padding: 11px;
+        margin-bottom: 12px;
+        outline: none;
+      }
+      textarea {
+        resize: none;;
+      }
+    }
+    .copyright {
+      padding: 25px 0;
+      border-top: 1px solid #c5c5c5;
+      overflow: hidden;
+      color: #888;
+      margin-top: 30px;
+      .c-text,
+      .c-company {
+        float: $float-left;
+        width: 50%;
+      }
+      .c-company {
+        text-align: $text-right;
+      }
+
+    }
+    .section-title:last-of-type {
+      color: #444;
+      font-weight: normal;
+    }
+}
